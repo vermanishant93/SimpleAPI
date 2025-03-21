@@ -55,7 +55,7 @@ stages:
   jobs:
   - deployment: DeployAPI
     displayName: 'Deploy API to Azure App Service'
-    environment: 'Production'  # Define your environment in Azure DevOps
+    environment: 'Dev'  # Define your environment in Azure DevOps
     strategy:
       runOnce:
         deploy:
