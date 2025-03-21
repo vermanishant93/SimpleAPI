@@ -71,7 +71,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy to Azure App Service'
             inputs:
-              azureSubscription: 'Azure subscription 1'  # Update with your Azure service connection
+              azureSubscription: 'SimpleAppServiceConnection'  # Update with your Azure service connection
               appName: 'SimpleApp'  # Update with your Azure Web App name
               package: '$(System.ArtifactsDirectory)/drop'
               appType: 'webApp'
